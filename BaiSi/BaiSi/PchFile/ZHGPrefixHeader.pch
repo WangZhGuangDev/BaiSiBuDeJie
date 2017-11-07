@@ -1,0 +1,22 @@
+//
+//  ZHGPrefixHeader.pch
+//  BaiSi
+//
+//  Created by 王忠光 on 2017/11/7.
+//  Copyright © 2017年 王忠光. All rights reserved.
+//
+
+#ifndef ZHGPrefixHeader_pch
+#define ZHGPrefixHeader_pch
+//自定义 NSLog()
+#ifdef DEBUG
+#define ZHGLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZHGLog(...)
+#endif
+
+#import "UIView+ZHGUIView.h"
+#import "UIBarButtonItem+ZHGBarButtonItem.h"
+
+
+#endif /* ZHGPrefixHeader_pch */
