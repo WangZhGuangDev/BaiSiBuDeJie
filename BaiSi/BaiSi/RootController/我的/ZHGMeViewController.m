@@ -17,13 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"我";
- 
+    self.view.backgroundColor = ZHGBackGroundColor;
     UIBarButtonItem *setting = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highlightImage:@"mine-setting-icon-click" action:@selector(rightItemAction:) target:self];
     UIBarButtonItem *moon = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highlightImage:@"mine-moon-icon-click" action:@selector(rightItemAction:) target:self];
     
     self.navigationItem.rightBarButtonItems = @[setting,moon];
-    
-    self.view.backgroundColor = [UIColor cyanColor];
 }
 
 

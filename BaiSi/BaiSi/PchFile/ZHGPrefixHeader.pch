@@ -15,8 +15,11 @@
 #define ZHGLog(...)
 #endif
 
+//Category
+#import "UIColor+ZHGColor.h"
 #import "UIView+ZHGUIView.h"
 #import "UIBarButtonItem+ZHGBarButtonItem.h"
-
+//Header
+#import "ZHGColorHeader.h"
 
 #endif /* ZHGPrefixHeader_pch */

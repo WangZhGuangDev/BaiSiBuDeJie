@@ -49,6 +49,7 @@
     controller.tabBarItem.title = title;
     controller.tabBarItem.image = [UIImage imageNamed:image];
     controller.tabBarItem.selectedImage = [UIImage imageNamed:selectImage];
+    
     ZHGNavigationController *navagationController = [[ZHGNavigationController alloc] initWithRootViewController:controller];
     [self addChildViewController:navagationController];
 }

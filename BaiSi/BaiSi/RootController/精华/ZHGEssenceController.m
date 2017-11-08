@@ -19,11 +19,8 @@
 
     self.navigationItem.title = @"精华";
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
-    
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highlightImage:@"MainTagSubIconClick" action:@selector(leftItemAction:) target:self];
-
-    self.view.backgroundColor = [UIColor redColor];
-    
+    self.view.backgroundColor = ZHGBackGroundColor;
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highlightImage:@"MainTagSubIconClick" action:@selector(leftItemAction:) target:self];    
 }
 
 -(void)leftItemAction:(UIButton *)sender {

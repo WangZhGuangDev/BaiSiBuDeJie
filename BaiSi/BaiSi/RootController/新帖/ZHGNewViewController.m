@@ -17,12 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"新帖";
-    
+    self.view.backgroundColor = ZHGBackGroundColor;
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highlightImage:@"MainTagSubIconClick" action:@selector(leftItemAction:) target:self];
-
-    self.view.backgroundColor = [UIColor orangeColor];
 }
 
 -(void)leftItemAction:(UIButton *)sender {

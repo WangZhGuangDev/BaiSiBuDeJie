@@ -22,6 +22,7 @@
 		1F319B2C1FB1E2DB00FE049B /* ZHGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F319B2B1FB1E2DB00FE049B /* ZHGTabBar.m */; };
 		1F319B301FB1E76100FE049B /* UIView+ZHGUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F319B2F1FB1E76100FE049B /* UIView+ZHGUIView.m */; };
 		1F319B351FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F319B341FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m */; };
+		1F466CB21FB345020076FC1B /* UIColor+ZHGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,9 @@
 		1F319B321FB1E81400FE049B /* ZHGPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHGPrefixHeader.pch; sourceTree = "<group>"; };
 		1F319B331FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZHGBarButtonItem.h"; sourceTree = "<group>"; };
 		1F319B341FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZHGBarButtonItem.m"; sourceTree = "<group>"; };
+		1F466CAE1FB342390076FC1B /* ZHGColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHGColorHeader.h; sourceTree = "<group>"; };
+		1F466CB01FB345020076FC1B /* UIColor+ZHGColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZHGColor.h"; sourceTree = "<group>"; };
+		1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZHGColor.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,7 @@
 		1F1866F91FB09DF800901F8A /* BaiSi */ = {
 			isa = PBXGroup;
 			children = (
+				1F466CAF1FB344CD0076FC1B /* ZHGTool */,
 				1F1867341FB0A90A00901F8A /* RootController */,
 				1F1867301FB0A6C300901F8A /* NavigationController */,
 				1F18672C1FB0A24B00901F8A /* TabBarController */,
@@ -193,6 +198,8 @@
 			children = (
 				1F319B2E1FB1E76100FE049B /* UIView+ZHGUIView.h */,
 				1F319B2F1FB1E76100FE049B /* UIView+ZHGUIView.m */,
+				1F466CB01FB345020076FC1B /* UIColor+ZHGColor.h */,
+				1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */,
 				1F319B331FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.h */,
 				1F319B341FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m */,
 			);
@@ -203,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				1F319B321FB1E81400FE049B /* ZHGPrefixHeader.pch */,
+				1F466CAE1FB342390076FC1B /* ZHGColorHeader.h */,
 			);
 			path = PchFile;
 			sourceTree = "<group>";
@@ -241,6 +249,13 @@
 				1F1867361FB0A93500901F8A /* ZHGEssenceController.m */,
 			);
 			path = "精华";
+			sourceTree = "<group>";
+		};
+		1F466CAF1FB344CD0076FC1B /* ZHGTool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZHGTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +400,7 @@
 				1F18672F1FB0A26C00901F8A /* ZHGTabBarController.m in Sources */,
 				1F18673A1FB0A94A00901F8A /* ZHGNewViewController.m in Sources */,
 				1F319B2C1FB1E2DB00FE049B /* ZHGTabBar.m in Sources */,
+				1F466CB21FB345020076FC1B /* UIColor+ZHGColor.m in Sources */,
 				1F1866FC1FB09DF800901F8A /* AppDelegate.m in Sources */,
 				1F1867371FB0A93500901F8A /* ZHGEssenceController.m in Sources */,
 			);

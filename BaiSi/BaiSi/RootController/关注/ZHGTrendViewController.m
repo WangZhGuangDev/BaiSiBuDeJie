@@ -17,10 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"我的关注";
-    
+    self.view.backgroundColor = ZHGBackGroundColor;
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highlightImage:@"friendsRecommentIcon-click" action:@selector(leftItemAction:) target:self];
-    
-    self.view.backgroundColor = [UIColor greenColor];
 }
 -(void)leftItemAction:(UIButton *)sender {
     ZHGLog(@"%s",__func__);
