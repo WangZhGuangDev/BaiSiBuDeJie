@@ -180,14 +180,10 @@
 		1F1867341FB0A90A00901F8A /* RootController */ = {
 			isa = PBXGroup;
 			children = (
-				1F1867351FB0A93500901F8A /* ZHGEssenceController.h */,
-				1F1867361FB0A93500901F8A /* ZHGEssenceController.m */,
-				1F1867381FB0A94A00901F8A /* ZHGNewViewController.h */,
-				1F1867391FB0A94A00901F8A /* ZHGNewViewController.m */,
-				1F18673B1FB0A96000901F8A /* ZHGTrendViewController.h */,
-				1F18673C1FB0A96000901F8A /* ZHGTrendViewController.m */,
-				1F18673E1FB0A96900901F8A /* ZHGMeViewController.h */,
-				1F18673F1FB0A96900901F8A /* ZHGMeViewController.m */,
+				1F466CAD1FB340970076FC1B /* 精华 */,
+				1F466CAC1FB340880076FC1B /* 新帖 */,
+				1F466CAB1FB340810076FC1B /* 关注 */,
+				1F466CAA1FB3406B0076FC1B /* 我的 */,
 			);
 			path = RootController;
 			sourceTree = "<group>";
@@ -209,6 +205,42 @@
 				1F319B321FB1E81400FE049B /* ZHGPrefixHeader.pch */,
 			);
 			path = PchFile;
+			sourceTree = "<group>";
+		};
+		1F466CAA1FB3406B0076FC1B /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				1F18673E1FB0A96900901F8A /* ZHGMeViewController.h */,
+				1F18673F1FB0A96900901F8A /* ZHGMeViewController.m */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		1F466CAB1FB340810076FC1B /* 关注 */ = {
+			isa = PBXGroup;
+			children = (
+				1F18673B1FB0A96000901F8A /* ZHGTrendViewController.h */,
+				1F18673C1FB0A96000901F8A /* ZHGTrendViewController.m */,
+			);
+			path = "关注";
+			sourceTree = "<group>";
+		};
+		1F466CAC1FB340880076FC1B /* 新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				1F1867381FB0A94A00901F8A /* ZHGNewViewController.h */,
+				1F1867391FB0A94A00901F8A /* ZHGNewViewController.m */,
+			);
+			path = "新帖";
+			sourceTree = "<group>";
+		};
+		1F466CAD1FB340970076FC1B /* 精华 */ = {
+			isa = PBXGroup;
+			children = (
+				1F1867351FB0A93500901F8A /* ZHGEssenceController.h */,
+				1F1867361FB0A93500901F8A /* ZHGEssenceController.m */,
+			);
+			path = "精华";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
