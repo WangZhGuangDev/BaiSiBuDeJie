@@ -7,7 +7,7 @@
 //
 
 #import "ZHGEssenceController.h"
-
+#import "ZHGViewController.h"
 @interface ZHGEssenceController ()
 
 @end
@@ -24,7 +24,8 @@
 }
 
 -(void)leftItemAction:(UIButton *)sender {
-    
+    ZHGViewController *vc = [[ZHGViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
