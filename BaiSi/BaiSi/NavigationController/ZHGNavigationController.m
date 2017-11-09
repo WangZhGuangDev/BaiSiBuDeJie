@@ -14,10 +14,16 @@
 
 @implementation ZHGNavigationController
 
+/**
+ 当第一次使用这个类的时候回调用一次
+ */
++(void)initialize {
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:(UIBarMetricsDefault)];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:(UIBarMetricsDefault)];
-    // Do any additional setup after loading the view.
+    ZHGLog(@"%s",__func__);
 }
 
 /**

@@ -20,18 +20,19 @@
 
 @implementation ZHGTabBarController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
++(void)initialize {
     NSDictionary *attrNormal = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor grayColor]};
-
+    
     NSDictionary *attrSelect = @{NSFontAttributeName:[UIFont systemFontOfSize:12],NSForegroundColorAttributeName:[UIColor darkGrayColor]};
     //通过 appearance 统一设置所有 UITabBarItem 的文字属性
     //后面带有 UI_APPEARANCE_SELECTOR 的方法，都可以通过 appearance 对象来统一设置
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrNormal forState:(UIControlStateNormal)];
     [item setTitleTextAttributes:attrSelect forState:(UIControlStateSelected)];
-    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
     [self setupChildVCWithController:[[ZHGEssenceController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectImage:@"tabBar_essence_click_icon"];
     
