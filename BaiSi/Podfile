@@ -1,0 +1,8 @@
+target 'BaiSi' do
+platform:ios,'9.0'
+
+pod 'AFNetworking'
+pod 'SDWebImage'
+
+
+end

@@ -24,6 +24,7 @@
 		1F319B351FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F319B341FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m */; };
 		1F466CB21FB345020076FC1B /* UIColor+ZHGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */; };
 		1FA9C0A31FB495AA008228E8 /* ZHGTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9C0A21FB495AA008228E8 /* ZHGTrendViewController.xib */; };
+		23DD09A65E27F2A16C7322CC /* libPods-BaiSi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CACE22577849959D52E6644 /* libPods-BaiSi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1778FCA0D4BF850191DE0C32 /* Pods-BaiSi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSi/Pods-BaiSi.debug.xcconfig"; sourceTree = "<group>"; };
+		1CACE22577849959D52E6644 /* libPods-BaiSi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaiSi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1866F71FB09DF800901F8A /* BaiSi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaiSi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F1866FA1FB09DF800901F8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F1866FB1FB09DF800901F8A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		1F466CB01FB345020076FC1B /* UIColor+ZHGColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZHGColor.h"; sourceTree = "<group>"; };
 		1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZHGColor.m"; sourceTree = "<group>"; };
 		1FA9C0A21FB495AA008228E8 /* ZHGTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHGTrendViewController.xib; sourceTree = "<group>"; };
+		84B1E5E325A823A241BBB510 /* Pods-BaiSi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaiSi.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaiSi/Pods-BaiSi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23DD09A65E27F2A16C7322CC /* libPods-BaiSi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9892C70F6CE23E3995FE47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CACE22577849959D52E6644 /* libPods-BaiSi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1F1866EE1FB09DF800901F8A = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,8 @@
 				1F1867121FB09DF800901F8A /* BaiSiTests */,
 				1F18671D1FB09DF800901F8A /* BaiSiUITests */,
 				1F1866F81FB09DF800901F8A /* Products */,
+				C26E543C4A91CEDB55E9217A /* Pods */,
+				0F9892C70F6CE23E3995FE47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +276,15 @@
 			path = ZHGTool;
 			sourceTree = "<group>";
 		};
+		C26E543C4A91CEDB55E9217A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1778FCA0D4BF850191DE0C32 /* Pods-BaiSi.debug.xcconfig */,
+				84B1E5E325A823A241BBB510 /* Pods-BaiSi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,9 +292,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F1867231FB09DF800901F8A /* Build configuration list for PBXNativeTarget "BaiSi" */;
 			buildPhases = (
+				F6DFE51105CBDFA75FDEE8F9 /* [CP] Check Pods Manifest.lock */,
 				1F1866F31FB09DF800901F8A /* Sources */,
 				1F1866F41FB09DF800901F8A /* Frameworks */,
 				1F1866F51FB09DF800901F8A /* Resources */,
+				9DDC268267602BF86CB0AFB0 /* [CP] Embed Pods Frameworks */,
+				0BF473ED304BBED77C925565 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,6 +416,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BF473ED304BBED77C925565 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiSi/Pods-BaiSi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DDC268267602BF86CB0AFB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BaiSi/Pods-BaiSi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DFE51105CBDFA75FDEE8F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BaiSi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F1866F31FB09DF800901F8A /* Sources */ = {
@@ -559,6 +637,7 @@
 		};
 		1F1867241FB09DF800901F8A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1778FCA0D4BF850191DE0C32 /* Pods-BaiSi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -576,6 +655,7 @@
 		};
 		1F1867251FB09DF800901F8A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84B1E5E325A823A241BBB510 /* Pods-BaiSi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
