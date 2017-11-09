@@ -23,7 +23,7 @@
 		1F319B301FB1E76100FE049B /* UIView+ZHGUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F319B2F1FB1E76100FE049B /* UIView+ZHGUIView.m */; };
 		1F319B351FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F319B341FB1F8C400FE049B /* UIBarButtonItem+ZHGBarButtonItem.m */; };
 		1F466CB21FB345020076FC1B /* UIColor+ZHGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */; };
-		1F466CB51FB34BC40076FC1B /* ZHGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F466CB41FB34BC40076FC1B /* ZHGViewController.m */; };
+		1FA9C0A31FB495AA008228E8 /* ZHGTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA9C0A21FB495AA008228E8 /* ZHGTrendViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,8 +79,7 @@
 		1F466CAE1FB342390076FC1B /* ZHGColorHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHGColorHeader.h; sourceTree = "<group>"; };
 		1F466CB01FB345020076FC1B /* UIColor+ZHGColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZHGColor.h"; sourceTree = "<group>"; };
 		1F466CB11FB345020076FC1B /* UIColor+ZHGColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZHGColor.m"; sourceTree = "<group>"; };
-		1F466CB31FB34BC40076FC1B /* ZHGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHGViewController.h; sourceTree = "<group>"; };
-		1F466CB41FB34BC40076FC1B /* ZHGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHGViewController.m; sourceTree = "<group>"; };
+		1FA9C0A21FB495AA008228E8 /* ZHGTrendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZHGTrendViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +231,7 @@
 			children = (
 				1F18673B1FB0A96000901F8A /* ZHGTrendViewController.h */,
 				1F18673C1FB0A96000901F8A /* ZHGTrendViewController.m */,
+				1FA9C0A21FB495AA008228E8 /* ZHGTrendViewController.xib */,
 			);
 			path = "关注";
 			sourceTree = "<group>";
@@ -250,8 +250,6 @@
 			children = (
 				1F1867351FB0A93500901F8A /* ZHGEssenceController.h */,
 				1F1867361FB0A93500901F8A /* ZHGEssenceController.m */,
-				1F466CB31FB34BC40076FC1B /* ZHGViewController.h */,
-				1F466CB41FB34BC40076FC1B /* ZHGViewController.m */,
 			);
 			path = "精华";
 			sourceTree = "<group>";
@@ -372,6 +370,7 @@
 			files = (
 				1F1867041FB09DF800901F8A /* Assets.xcassets in Resources */,
 				1F1867021FB09DF800901F8A /* Main.storyboard in Resources */,
+				1FA9C0A31FB495AA008228E8 /* ZHGTrendViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +396,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F18673D1FB0A96000901F8A /* ZHGTrendViewController.m in Sources */,
-				1F466CB51FB34BC40076FC1B /* ZHGViewController.m in Sources */,
 				1F319B301FB1E76100FE049B /* UIView+ZHGUIView.m in Sources */,
 				1F18670A1FB09DF800901F8A /* main.m in Sources */,
 				1F1867401FB0A96900901F8A /* ZHGMeViewController.m in Sources */,
